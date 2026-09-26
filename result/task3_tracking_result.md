@@ -71,8 +71,6 @@ Tracker maxLostFrames=8, angleGateDeg=20, gateGrowthDeg=2, maxAngleGateDeg=30, m
 
 ## 5. 人工复查与典型事件
 
-复查导航见 [自动生成的回看片段](task3_audit/manual_review_windows.md)。它只指出程序事件，不证明事件合理。
-
 | 检查项 | 视频与帧范围 | 对照原图观察到的事实 | 判定与原因 |
 |---|---|---|---|
 | 两目标同时有效时是否保持原目标 | recognition_overlay.mp4 72-96fps |仍保持原目标 | 通过 |
