@@ -33,3 +33,23 @@ target_link_libraries(task2_fit PRIVATE
     Eigen3::Eigen
     Ceres::ceres
 )
+add_executable(task3_windmill
+    src/task3_windmill/main.cpp
+   src/task3_windmill/detector.cpp
+   src/task3_windmill/tracker.cpp
+)
+
+target_compile_features(task3_windmill PRIVATE cxx_std_17)
+
+target_include_directories(task3_windmill PRIVATE
+    ${OpenCV_INCLUDE_DIRS}
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+target_link_libraries(task3_windmill PRIVATE
+    ${OpenCV_LIBS}
+)
+
+set_target_properties(task3_windmill PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}"
+)

@@ -1,0 +1,212 @@
+{
+  "generated_at": "2026-09-26T10:43:30.761036+08:00",
+  "structural_status": "PASS",
+  "semantic_accuracy_assessed": false,
+  "environment": {
+    "Python": "3.10.12",
+    "g++": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "CMake": "cmake version 3.22.1",
+    "Git": "git version 2.34.1",
+    "ffprobe": "ffprobe version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2007-2021 the FFmpeg developers"
+  },
+  "videos": [
+    {
+      "name": "task_3",
+      "scene": "小能量机关",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "input": {
+        "path": "task_3.mp4",
+        "width": 1440,
+        "height": 1080,
+        "fps": 30.0,
+        "decoded_frames": 796,
+        "video_seconds": 26.533333333333335,
+        "bytes": 7730732,
+        "metadata_frames": "796",
+        "timestamp_tolerance": 0.00013020833333333333,
+        "constant_frame_rate": true,
+        "max_cfr_deviation_s": 3.3333333604446125e-07
+      },
+      "overlay": {
+        "path": "recognition_overlay.mp4",
+        "width": 1440,
+        "height": 1080,
+        "fps": 30.0,
+        "decoded_frames": 796,
+        "video_seconds": 26.533333333333335,
+        "bytes": 11364509,
+        "metadata_frames": "796",
+        "timestamp_tolerance": 0.00013020833333333333,
+        "constant_frame_rate": true,
+        "max_cfr_deviation_s": 3.3333333604446125e-07
+      },
+      "video_check": {
+        "status": "PASS",
+        "max_timestamp_difference_s": 0.0,
+        "tolerance_s": 0.00013020833333333333,
+        "scope": "尺寸、解码帧数、FPS、相对播放时序；不证明图像内容或身份正确"
+      },
+      "binary": {
+        "path": "binary_process.mp4",
+        "width": 1440,
+        "height": 1080,
+        "fps": 30.0,
+        "decoded_frames": 796,
+        "video_seconds": 26.533333333333335,
+        "bytes": 13912518,
+        "metadata_frames": "796",
+        "timestamp_tolerance": 0.00013020833333333333,
+        "constant_frame_rate": true,
+        "max_cfr_deviation_s": 3.3333333604446125e-07
+      },
+      "binary_check": {
+        "status": "PASS",
+        "max_timestamp_difference_s": 0.0,
+        "tolerance_s": 0.00013020833333333333,
+        "scope": "尺寸、解码帧数、FPS、相对播放时序；不证明图像内容或身份正确"
+      },
+      "summary": {
+        "parameters": "HSV H=[0,30], S>=100, V>=70; open=0, close=3。\n\nCircle radius=[25,60], minCenterDistance=45, Hough=18, innerRatio=0.55, gapRatio=0.79, outer>=0.65, inner>=0.6, gap<=0.7。\n\nR area=[120,600], width=[12,36], height=[10,34], aspect=[0.85,1.6], extent=[0.58,0.9], H<=13, V>=110, surround<=0.35, score>=0.72, ambiguity=0.08, distanceRatio=[3.5,8]。\n\nTracker maxLostFrames=8, angleGateDeg=20, gateGrowthDeg=2, maxAngleGateDeg=30, maxDistanceChange=0.3, maxRadiusChange=0.35, ambiguityMargin=0.1, motionAlpha=0.4, maxStepDeg=7。",
+        "max_lost": 8,
+        "frames": 796,
+        "totals": {
+          "detected": 548,
+          "lost": 47,
+          "waiting": 201,
+          "R detected": 597,
+          "至少两个有效候选的帧": 0,
+          "新建 ID / ACQUIRED": 5,
+          "同 ID 恢复 / REACQUIRED": 7,
+          "释放 ID / RELEASED": 5
+        },
+        "opencv": "4.5.4"
+      },
+      "logs": {
+        "states": {
+          "waiting": 201,
+          "detected": 548,
+          "lost": 47
+        },
+        "events": {
+          "NONE": 201,
+          "ACQUIRED": 5,
+          "TRACKED": 536,
+          "LOST": 12,
+          "REACQUIRED": 7,
+          "HOLD": 30,
+          "RELEASED": 5
+        },
+        "failure_reasons": {
+          "R_LOST": 199,
+          "NO_VALID_TARGET": 25,
+          "NO_MATCH": 22,
+          "WAITING_FOR_TARGET": 2
+        },
+        "r_detected": 597,
+        "multi_candidate_frames": 0,
+        "index_changes_same_id": 0
+      }
+    },
+    {
+      "name": "task_4",
+      "scene": "大能量机关",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "input": {
+        "path": "task_4.mp4",
+        "width": 1440,
+        "height": 1080,
+        "fps": 30.0,
+        "decoded_frames": 1800,
+        "video_seconds": 60.0,
+        "bytes": 15671512,
+        "metadata_frames": "1800",
+        "timestamp_tolerance": 0.00013020833333333333,
+        "constant_frame_rate": true,
+        "max_cfr_deviation_s": 3.3333333604446125e-07
+      },
+      "overlay": {
+        "path": "recognition_overlay.mp4",
+        "width": 1440,
+        "height": 1080,
+        "fps": 30.0,
+        "decoded_frames": 1800,
+        "video_seconds": 60.0,
+        "bytes": 26041295,
+        "metadata_frames": "1800",
+        "timestamp_tolerance": 0.00013020833333333333,
+        "constant_frame_rate": true,
+        "max_cfr_deviation_s": 3.3333333604446125e-07
+      },
+      "video_check": {
+        "status": "PASS",
+        "max_timestamp_difference_s": 0.0,
+        "tolerance_s": 0.00013020833333333333,
+        "scope": "尺寸、解码帧数、FPS、相对播放时序；不证明图像内容或身份正确"
+      },
+      "binary": {
+        "path": "binary_process.mp4",
+        "width": 1440,
+        "height": 1080,
+        "fps": 30.0,
+        "decoded_frames": 1800,
+        "video_seconds": 60.0,
+        "bytes": 29787671,
+        "metadata_frames": "1800",
+        "timestamp_tolerance": 0.00013020833333333333,
+        "constant_frame_rate": true,
+        "max_cfr_deviation_s": 3.3333333604446125e-07
+      },
+      "binary_check": {
+        "status": "PASS",
+        "max_timestamp_difference_s": 0.0,
+        "tolerance_s": 0.00013020833333333333,
+        "scope": "尺寸、解码帧数、FPS、相对播放时序；不证明图像内容或身份正确"
+      },
+      "summary": {
+        "parameters": "HSV H=[0,30], S>=100, V>=70; open=0, close=3。\n\nCircle radius=[25,60], minCenterDistance=45, Hough=18, innerRatio=0.55, gapRatio=0.79, outer>=0.65, inner>=0.6, gap<=0.7。\n\nR area=[120,600], width=[12,36], height=[10,34], aspect=[0.85,1.6], extent=[0.58,0.9], H<=13, V>=110, surround<=0.35, score>=0.72, ambiguity=0.08, distanceRatio=[3.5,8]。\n\nTracker maxLostFrames=8, angleGateDeg=20, gateGrowthDeg=2, maxAngleGateDeg=30, maxDistanceChange=0.3, maxRadiusChange=0.35, ambiguityMargin=0.1, motionAlpha=0.4, maxStepDeg=7。",
+        "max_lost": 8,
+        "frames": 1800,
+        "totals": {
+          "detected": 1322,
+          "lost": 168,
+          "waiting": 310,
+          "R detected": 1572,
+          "至少两个有效候选的帧": 763,
+          "新建 ID / ACQUIRED": 17,
+          "同 ID 恢复 / REACQUIRED": 31,
+          "释放 ID / RELEASED": 16
+        },
+        "opencv": "4.5.4"
+      },
+      "logs": {
+        "states": {
+          "detected": 1322,
+          "lost": 168,
+          "waiting": 310
+        },
+        "events": {
+          "ACQUIRED": 17,
+          "TRACKED": 1274,
+          "LOST": 47,
+          "REACQUIRED": 31,
+          "HOLD": 105,
+          "RELEASED": 16,
+          "NONE": 310
+        },
+        "failure_reasons": {
+          "NO_VALID_TARGET": 62,
+          "NO_MATCH": 85,
+          "R_LOST": 228,
+          "WAITING_FOR_TARGET": 103
+        },
+        "r_detected": 1572,
+        "multi_candidate_frames": 763,
+        "index_changes_same_id": 176
+      }
+    }
+  ]
+}

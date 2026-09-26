@@ -1,1 +1,24 @@
 build/
+# 本地构建和备份
+/build/
+/build_verify/
+/backups/
+
+# 下载的阶段代码包及解压副本
+/task3_milestone*/
+/task3_milestone*_code.*
+
+# 编辑器/辅助脚本产物
+*.bak
+__pycache__/
+*.pyc
+
+# 旧阶段视频：保留在本地，不作为本次最终结果上传
+/result/task3_windmill/*/io_check.mp4
+/result/task3_windmill/*/candidate_overlay.mp4
+/result/task3_windmill/*/center_overlay.mp4
+
+# 批量调试图
+/result/task3_windmill/*/debug/
+/result/task3_windmill/*/debug_m5/
+/result/task3_windmill/*/debug_m6/

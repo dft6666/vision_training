@@ -1,0 +1,15 @@
+{
+  "scope": "核验时源码快照；不自动证明视频由这些字节对应的可执行文件生成",
+  "sha256": {
+    "CMakeLists.txt": "003bd142f7c7d69538345e1fa3412904cfc4d4e0323a01eef163597f5dddb085",
+    "include/task3_windmill/detector.hpp": "c8116434419ba1a1173f986dd8b967c6cc444c1cdd6c70f2d90fef29ae458982",
+    "include/task3_windmill/tracker.hpp": "200cca2a1f310e6de900d6b7ebdb139cd8cbd1b0e66d39b0c9634e259e3e4470",
+    "include/task3_windmill/types.hpp": "6a0b25c287b6adc3d84e317388dfda26d00770931df33b294e425f3320aeeec1",
+    "include/task3_windmill/video_processor.hpp": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/task3_windmill/detector.cpp": "4f24a99daae2ffa5c3b8de3b2c41fdffb2d6292f5190818b47d9c76f0a6f2a2f",
+    "src/task3_windmill/main.cpp": "cd9ba61e188aff26959ddc1ebbfb7c95f2d09a051a7935dddc3b3ab16856799d",
+    "src/task3_windmill/tracker.cpp": "7927651649e0218bce58574bd504f4ec9b52d083b94a6e94b68a830e88430dbb",
+    "src/task3_windmill/video_processor.cpp": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/finalize_task3.py": "186c9c0bd00351eddaf4c05d1d2a47f7bfbfe0d9ab8fe58c080da39ee600d98f"
+  }
+}
